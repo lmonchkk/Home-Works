@@ -1,0 +1,65 @@
+.Punkt1{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin-right: 7px;
+
+    color: white;
+}
+
+.Punkt2{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+.Punkt3{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+.Punkt4{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+.Punkt5{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
