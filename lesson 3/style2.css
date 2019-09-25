@@ -1,28 +1,155 @@
-@import url("style3.css");
+.Month{
+    background: black;
 
-#month{
-    display: inline-block;
+    height: 50px;
     width: 350px;
-    height: 420px;
-    background-color:black;
-   /* background-attachment: fixed;*/
-    background-repeat: no-repeat; /* repeat-x repeat-y */
-    background-position: 50px 100px;
-    text-align: center;
-}
-[data-status="ok"]{
+
+    font-size: 40PX;
+
+    margin: 0px;
+
     color: white;
 
- padding-top: 10px;
-}
-#month{
-    font-size: 20px;
-}
-.sbox{
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-color: black;
-    background-position: 50px 100px;
     text-align: center;
 }
+
+.dayweek1{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 36px;
+
+    margin: 0px;
+}
+
+.dayweek2{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 36px;
+
+    margin: 0px;
+}
+
+
+.dayweek3{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 36px;
+    
+    margin: 0px;
+}
+
+
+.dayweek4{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 36px;
+    
+    margin: 0px;
+}
+
+
+.dayweek5{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 36px;
+    
+    margin: 0px;
+}
+
+.dayweek6{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+    
+    font-size: 36px;
+
+    margin: 0px;
+}
+
+
+.dayweek7{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 36px;
+    
+    margin: 0px;
+}
+
+#weekend{
+    background: grey;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 47px;
+    
+    margin: 0px;
+}
+
+.day{
+    background: black;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 47px;
+    
+    margin: 0px;
+
+    text-align: center;
+}
+
+#currentday{
+    background: red;
+
+    color: white;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 47px;
+    
+    margin: 0px;
+
+    text-align: center;
+}
+
+
+
