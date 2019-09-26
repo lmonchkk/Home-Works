@@ -151,5 +151,21 @@
     text-align: center;
 }
 
+.lastmonth{
+    background: white;
+
+    color: black;
+
+    height: 500px;
+    width: 500px;
+
+    font-size: 47px;
+    
+    margin: 0px;
+
+    text-align: center;
+
+    font-style: "italic"
+}
 
 
