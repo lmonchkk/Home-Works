@@ -1,0 +1,92 @@
+/* Позиционирование*/
+
+.BOX{
+    width: 500px;
+    height: 1500px;
+    background: grey;
+    position: relative;
+}
+
+.square, .square2{
+    width: 15px;
+    height: 15px;
+    background: blue;
+
+    position: relative;
+    top: 20px;
+    left: 40px;
+
+   
+}
+
+.square{
+    z-index: 2;
+}
+
+/* По умолчанию все эдемкнты имеют position: static;
+
+   relative - позволяет сместить этот эленмент относительно своего местоположения. Он не теряет своего места;
+
+   top/left/right/bottom - свойства, позволяющие менять позиции элемента, отталкиваясь от указанной стороны на указанное расстояние
+   принимает - px/%/auto
+
+
+*/
+
+.square2{
+    background: orangered;
+    position: absolute;
+    top: auto;
+    left: auto;
+
+    bottom: 0;
+    left: 0;
+}
+
+/* При абсолютном позиционировании элемент теряет своё место.
+   top/left/right/bottom - они работают относительно области видимости первого экрана, либо если у родителя задан
+    position: relative, то относительно него 
+*/
+
+.square3{
+    width: 15px;
+    height: 15px;
+    background: rgb(36, 206, 36);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* 
+При фиксированном позиционировании элемент смещается вместе с экраном области видимости и принимает позицию в его рамках.
+Также он теряет совё место. На него не влияет если у родителя есть position: relative(либо любой другой кроме static), то относительно него;
+ */
+
+ .square4{
+    width: 15px;
+    height: 15px;
+    background: red;
+
+    position: sticky;
+    top: 0;
+
+ }
+
+ /* При position: sticky; элемент прилипает к указанной стороне экрана, когда область видимости смещается.
+    Он не теряет своего места. также он плохо поддерживается браузерами и при возможности его лучше избегать
+ */
+
+ .square5{
+    width: 30px;
+    height: 30px;
+    background: black;
+
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+    z-index: 1; /* 1-9999 */
+
+    /* z-index будет работать со всеми свойствами position кроме static. */
+
