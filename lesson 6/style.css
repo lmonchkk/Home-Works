@@ -1,0 +1,169 @@
+/* 
+    Ссылки не наследуют цвет и подчёркивание от родителя
+*/
+
+a:link{
+    color: green;
+    text-decoration: none;
+}
+
+a:visited{
+    color: darkcyan;
+}
+
+a:hover{
+    color:darkmagenta;
+}
+
+a:active{
+    color: yellow;
+}
+/* 
+    Правильный порядок расположения
+*/
+
+a.ssylka{
+    font-size: 20px;
+    color: black;
+}
+
+/* 
+    Псевдокласс - это доп классы, которые по умолчанию имеют теги, обычно они используются для изменения состояния или события
+
+    :link - псевдокласс, отвечающий за состояние ссылки в отдельном состоянии\
+    :hover- отвечает за дизайн принаведении
+    :active - отвечает за дизайн при нажатии на ссылку, когда клавиша зажата, но не отпущена
+    :visited - отвечает за дизайн при посещении
+*/
+
+/* Текстовые свойства */
+#razdel1{
+    word-spacing: 5px;
+    /*
+     Задаёт интревал между словами 
+    Принимает px\em\%
+    */
+
+    letter-spacing: 3px;
+    /*
+    Задаёт расстояние мкжду буквами  слове
+    Примимает px\em 
+    */
+
+    text-indent: 30px;
+    /*
+     Отступ в начале абзаца
+    Принимает px\% от ширины родителя\em
+    */
+
+
+    /*Работа с шрифтами*/
+
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+        Семейства:
+        serif - шрифты с засечками
+        sans-serif - рубленные шрифты
+        monospace - моноширенные шрифты
+        cursiv - рукописны шрифты
+    */
+
+    font-weight: 900;
+    /*
+        100-900
+    */
+
+    font-style: italic; /* Курсив */
+
+
+    font-size: 20px;
+    /*
+        Поддерживает px \ em \ rem \ % 
+
+        smaller - сделает шрифт на порядок меньше, чем у родителя
+    */
+
+
+    font: 24px/28px "Calibri", sans-serif;
+
+    /* font-weight font-style font-size\line-height font-family*/
+
+    line-height: 1.5;
+
+    /*
+        Принимает px\% и относительные единицы. 1=100% шрифта
+    */
+}
+
+.gradient-l{
+    height: 300px;
+    width: 400px;
+
+    background-image: linear-gradient(45deg, red, blue);
+
+    /*
+    to top \ to right \ to bottom(по умолчанию) \ to left
+    to top left \ to top bottom \ 
+    */
+}
+
+.gradient-l2{
+    height: 300px;
+    width: 400px;
+
+    background-image: linear-gradient(45deg, red 20%,  yellow 40%, blue 60%, purple 80%);
+}
+
+.gradient-l3{
+    height: 300px;
+    width: 400px;
+
+    background-image: linear-gradient(to right, red 20%,  blue 20%, blue 80%, purple 80%);
+}
+
+.gradient-r{
+    height: 300px;
+    width: 400px;
+
+    background:
+    radial-gradient(black, white);
+
+    /*
+        at top - координаты 0, 50%
+        40px 50px
+    */
+
+    background:
+    radial-gradient(at top, black, white);
+
+    background:
+    radial-gradient(100px 100px at 40px 50px, black, white);
+
+    /*
+        closest-side - стремится к ближайшей стороне
+        farthest-side - стремится к дальней стороне
+
+        closest-corner - ближайший угол
+        farthest-corner - дальний угол
+    */
+
+    background:
+    radial-gradient(circle closest-corner at 100px 50px, black, white);
+
+
+}
+
+.gradient-lr{
+    height: 300px;
+    width: 400px;
+    background:
+    repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px );
+}
+
+.gradient-rr{
+    height: 300px;
+    width: 400px;
+
+    background: 
+    repeating-radial-gradient(circle, red, red 10px, blue 10px, blue 20px );
+}
