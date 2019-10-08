@@ -1,0 +1,116 @@
+.website{
+    width: 1024px;
+    height:2048px;
+    background: grey;
+}
+
+.logoSite{
+    width:260px;
+    height: 50px;
+    background-image: url("https://i.xiaomi.ua/a/i/logo.png?v=1.2.11");
+
+}
+
+.siteName{
+    font-size: 64px;
+    color: white;
+}
+
+.phone{
+    float: center;
+    font-size: 24px;
+    color: black;
+}
+
+.Punkt1:hover{
+    background:green;
+}
+
+.Punkt2:hover{
+    background:green;
+}
+
+.Punkt3:hover{
+    background:green;
+}
+
+.Punkt4:hover{
+    background:green;
+}
+
+.Punkt1{
+    color:red;
+    width: 256px;
+    height: 64px;
+    font-size: 60px;
+    background:black;
+}
+
+.Punkt2{
+    color:red;
+    width: 256px;
+    height: 64px;
+    font-size: 60px;
+    background:black;
+}
+
+.Punkt3{
+    color:red;
+    width: 256px;
+    height: 64px;
+    font-size: 60px;
+    background:black;
+}
+
+.Punkt4{
+    color:red;
+    width: 256px;
+    height: 64px;
+    font-size: 60px;
+    background:black;
+}
+
+.punkt1{
+    color:red;
+    width: 128px;
+    height: 32px;
+    font-size: 24px;
+    background:black;
+}
+
+.punkt2{
+    color:red;
+    width: 128px;
+    height: 32px;
+    font-size: 24px;
+    background:black;
+}
+
+.punkt3{
+    color:red;
+    width: 128px;
+    height: 32px;
+    font-size: 24px;
+    background:black;
+}
+
+.punkt4{
+    color:red;
+    width: 128px;
+    height: 32px;
+    font-size: 24px;
+    background:black;
+}
+
+.content{
+    font-size: 24px;
+}
+
+.podval{
+    width: 1024px;
+    height: 512px;
+    background-image: linear-gradient(to bottom, grey 20%, black 80%);
+    text-align: center;
+    color: white;
+    text-align: bottom;
+}
