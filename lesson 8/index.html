@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--Аудио-->
+
+    <audio src="11.mp3" controls></audio>
+
+<!--
+    СONTROLS - включает упарвление аудио
+ -->
+
+    <audio controls muted preload="none">
+        <source src="11.mp3" type="audio/mpeg">
+        <source src="11.ogg" type="audio/ogg">
+    </audio>
+
+    <!--
+        autoplay - автовоспроизведение
+        loop - воспроизведение по кругу
+        muted - отключает звук при загрузке страницы
+
+        preload=""
+            auto (по умолчанию) - при загрузке браузера аудио загрузится сразу
+            metadata - при загрузке код грузится только первые несколько байт аудиозаписи с информации о ней
+            none - при загрузке аудиофайл не загрузится
+    -->
+
+
+    <!-- ВИДЕО -->
+
+    <video src="22.mp4" controls autoplay muted></video>
+    <video controls width="300" height="300">
+        <source src="22.mp4" type="video/mp4">
+        <source src="33.webm" type="video/webm">
+        <source src="44.ogv" type="video/ogg">
+    </video>
+
+    <!--
+        autoplay - автовоспроизведение
+        loop - воспроизведение по кругу
+        muted - отключает звук при загрузке страницы
+        poster="" - можно передать картинку которая будет выводится до запуска видео
+        preload=""
+            auto (по умолчанию) - при загрузке браузера видео загрузится сразу
+            metadata - при загрузке код грузится только первые несколько байт видео с информации о нём
+            none - при загрузке аудиофайл не загрузится
+        
+    -->
+
+
+
+    <div class="text">
+        ТЕКСТ
+    </div>
+
+    <div class="text2">ТЕКСТ 2</div>
+
+    <div class="box">
+        <b>Текст 5</b>
+        <p>Текст</p>
+        <p>Текст 2</p>
+        <span><b>Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            Vitae porro labore quod magni
+            earum quis, vero eum! Error,
+            suscipit debitis voluptate
+            enim magnam distinctio nemo 
+            officiis ipsa assumenda odio
+            sit?</b></span>
+        <h2>Заголовок</h2>
+        <p>Текст 3</p>
+    </div>
+
+
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+
+
+    </ul>
+
+
+</body>
+</html>
