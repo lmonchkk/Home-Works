@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Формы-->
+
+    <form action="form.php" method="post" name="form" target="_blank" id="form">
+        <fieldset>
+            <legend>Заголовок</legend>
+
+            <p>
+                <label for="name">Имя <em>*</em></label>
+                <input type="text" id="name" name="name">           
+            </p>
+            <p>
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email">
+            </p>
+        </fieldset>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+
+    <fieldset form="form">
+
+    </fieldset>
+
+    <!--
+        Атрибуты тега form
+        action - принимает ссылку на обработчик формы
+        action="http://google.com/form.php"
+        action="mailto:nickblack777@gmail.com"
+        Важно для 2 варианта указывать еще один атрибут
+        enctype="text/plain"
+        autocomplete="on"
+        on\off - позволяет отключить возможность сохранения браузером данных
+        введенных в поле пользователем
+        method="post"
+        post\get
+        При методе get данные введенные в форму отправляются в виде сформированной
+        адресной строки (например так работает гугл поиск)
+        При методе post данные в зашифрованном  виде отправляются на сервер
+        (например таким способом отправляются данные входе пользователя)
+        name="произвольно_имя"
+        Нужно указывать имя, чтобы иметь доступ к форме либо полю в бекенде.
+        novalidate - запрещает проверку всех полей формы
+        target="_blank"
+        _self - в текущем окне
+        _blank - в новом окне
+        Атрибуты для fieldset
+        disabled - отключает элементы внутри себя и делает их неактивными
+        form - в него передается id формы с которой нужно связать этот fieldset
+        name
+    -->
+
+    <form>
+        <input type="file" accept=".doc, .pdf, audio/*" multiple>
+        <!--
+            accept=".doc"
+            Разрешает к загрузке только определенные расширения файлов
+            Также поддерживает указание MIME типов
+            Например audio/*
+        -->
+
+        <input type="image" alt="google" src="g.png"><br>
+
+        <!--
+            При нажатии на картнку будет осуществляться отправка текущей формы
+            (работает как кнопка Отправить)
+        -->
+
+        <input type="text" autofocus readonly value="12334"><br>
+        <input type="number" step="10"><br>
+        <input type="range"><br>
+        <input type="date" min="2019-10-01"><br>
+        <input type="datetime-local"><br>
+        <input type="month"><br>
+        <input type="time"><br>
+        <input type="week"><br>
+        <input type="search" required><br>
+        <input type="tel" placeholder="текст"><br>
+        <input type="url"><br>
+        <input type="email"><br>
+        <input type="color"><br>
+        <input type="hidden"><br>
+        <input type="password"><br>
+        <input type="reset" value="CLEAR"><br>
+        <input type="submit" value="SEND"><br>
+        <button>Отослать</button><br>
+
+        <textarea cols="10" rows="10"></textarea>
+    </form>
+
+    <!--
+        Атрибуты для textarea
+        cols="10" кол-во колонок исходя из ширины символа
+        rows="10" кол-во строк
+        maxlength="100" - максимальное кол-во символов
+        wrap="hard"
+        hard - при отправке сохранит все переносы в тексте (работает в связке с cols)
+        soft - не сохранит
+        Атрибуты для полей text\search\tel\url\email\password
+        size="20" (лучше использовать css width)
+        Атрибут для file \ email
+        multiple - позволяет выбрать сразу несолько файлов или ввести несколько почт
+        через запятую
+        Атрибуты для полей range\number\даты
+        min="0"
+        min="2019-10-01"
+        max="10"
+        step="10"
+        Атрибуты для image
+        height - высоты
+        width - ширина
+        alt - описание
+        Атрибуты для текстовых полей
+        autocomplete
+        pattern="регулярное_выражение" - для проверки поля на правильность ввода
+        readonly - запрещает менять значение поля, но позволяет скопировать или 
+        выделить текст внутри
+        placeholder="текст" - задает текст, который будет виден пользователю до
+        ввода данных
+        Атрибуты для всех полей
+        autofocus - позволяет сфокусировать курсор на элементе при загрузке страницы
+        disabled - делает поле неактивным
+        form - нужно для связки поля с формой
+        name="произвольное_имя" - обязательный параметр для полей формы, для работы с
+        ними в бекенде
+        required - делает поле обязательным к вводу значения
+        value=""
+        Для submit\clear оно меняет текст кнопки
+        Для текстового поля - записывает значение по умолчанию в это поле
+        Для других элементов это просто храниемое значение внутри
+    -->
+
+    <form>
+        <select multiple>
+            <option label="ГМО">Пункт 1Пункт 1Пункт 1Пункт 1Пункт 1</option>
+            <option selected>Пункт 2</option>
+            <option>Пункт 3</option>
+            <option disabled>Пункт 4</option>
+
+            <optgroup label="Заголовок">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!--
+        Атрибуты для select
+        autofocus
+        disabled
+        form
+        name
+        required
+        size="3" - видимое количество пунктов списка
+        multiple - позволяет выбрать сразу несколько пунктов из списка
+        Атрибуты для option
+        disabled - запрещает выбор этого пункта
+        label="краткое_название"
+        selected - делает пункт сразу выделенным при загрузке странцы
+        value="10" - значение value будет отправлено на сервер, вместо текста, если
+        оно указано
+        Атрибуты для optgroup
+        disabled - можно днактивировать сразу группу опций
+        label="Заголовок"
+    -->
+
+
+    <!-- Надписи к полям формы  label -->
+    
+    <form>
+        <label for="username">Имя</label>
+        <input type="text" id="username">
+
+        <label>
+            Имя
+            <input type="text">
+        </label>
+
+        <label>Картошка <input type="checkbox"></label>
+        <label>Курочка <input type="checkbox"></label>
+        <label>Помидорчик <input type="checkbox" checked="checked"></label>
+
+
+        <label>Картошка <input type="radio" name="eat"></label>
+        <label>Курочка <input type="radio" name="eat"></label>
+        <label>Помидорчик <input type="radio" name="eat"></label>
+
+    </form>
+
+    <!--
+        Атрибуты для checkbox и radio
+        checked="checked" - делает пункт сразу активным(выбранным)
+    -->
+</body>
+</html>
