@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     
+     <div class="box">
+        <div>1111111111</div>
+        <div>222222222222</div>
+        <div>33333333333333</div>
+        <div>4444444444444444</div>
+        <div>555555555555555555</div>
+        <div>66666666666666666666</div>
+        <div>7777777777777777777777</div>
+     </div>
+
+     <!--Все элементы внутри превращаются в флекс-элементы. А  элемент box ведет себя как блочный-->
+
+     <input type="radio" name="key" id="basis" checked><label for="basis">flex-basis</label>
+<input type="radio" name="key" id="width"><label for="width">width</label>
+<input type="radio" name="key" id="maxwidth"><label for="maxwidth">max-width</label>
+
+<br><br>
+
+<div class="flex">
+	<div class="item">
+		Элемент с большим блоком внутри, который при наведении должен растянуться и вылезти за пределы самого элемента.
+		<div class="wide">Наведи на меня...</div>
+	</div>
+	<div class="item">2</div>
+</div>
+
 </body>
 </html>

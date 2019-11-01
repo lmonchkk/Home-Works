@@ -1,0 +1,170 @@
+.box{
+    display: flex;
+    height: 600px;
+
+    /*
+        Все элементы внутри превращаются в флекс-элементы. А  элемент box ведет себя как блочный
+
+        display: inline-flex;
+        Это то же самое, только box будет вести себя как inline-block
+
+        На флекс-элементы не влияют параметры такие как: float, clear, vertical-align, coloumns.
+
+        Есть праметры, которые отменяют флекс-элемент и выкидывают его и потока флекс-элементов
+        position: absolute\fixed
+
+        relativr можно!
+    */
+
+    flex-direction: row;
+    /*
+        Меняет направление главной оси 
+        row(по умолчанию) - горизонтальная ось слева направо
+        column - вертикальная ось с верху вниз
+        row-reverse - горизонтальная ось справа налево
+        column-reverse - аертикальная ось снизу вверх
+    */
+
+    flex-wrap: nowrap;
+    /*
+        nowrap(по умолчанию) - не позволяет элементам переноситься на новую строку
+        wrap - позволяет переноситься элементам на новую строку если им не хватает места
+        wrap-reverse - то что и wrap только перенос будет не вниз а вверх
+    */
+
+    flex-flow: row nowrap;
+    /*
+        Позволяет назначить сразу два параметра
+        flex-flow: flex-direction flex-wrap;
+    */
+
+    justify-content: flex-start;
+
+    /*
+        flex-start(по умолчанию) - элементы идут начиная с начала главной оси
+        flex-end - элементы прижимаются к концу главной оси
+        center - элементы центрируются распределяя оставшееся пространство по краям
+        space-between - крайние элементы прижиматся к краям флекс-бокса и оставшееся место распределяется как промежутки между ними
+        space-around - свободное место распределяется как промеждуток между всеми элементами. Крайнее левое и крайнее правое
+        пространство будет в два раза меньше чем между остальными элементами
+        spacr-evenly - то же что и space-around только крайний правый отступ будет равен всем отступам между элементами
+    */
+
+    align-content: stretch;
+    /*
+        stretch(по умолчанию) - элементы занимают максимальную высоту кросс-оси родителя(растягиваются на эту высоту).
+        Если элементы в два ряда, они делят высоту поровну
+        flex-start - элементы прижимаются в верхней части флексбокса
+        flex-end - элементы прижимаются к нижней части флексбокса
+        center - элементы центрируются относительно кросс-оси
+        spacr-between - крайние элементы прижимаются к краям кросс-оси, оставшееся место распределяется как отступы между элементами
+        space-around - свободное место распределяется между рядами, крайний верхний и крайний нижний отступ в два раза меньше чем между рядами
+        space-evenly - то же что и space-around тодько все отступы по кросс-оси одинаковые (между рядами)
+    */
+
+    align-items: stretch;
+    /*
+        stretch(по умолчанию) - элементы растягиваются заполняя всю строку по высоте
+        flex-start - элементы прижимаются к началалу ряда( строки )
+        flex-end - элементы прижимаются к концу ряда
+        center - элементы выравниваются по центру ряда
+        baseline - элементы выравниваются по базовой линии текста (базовая линия начинает совпадать с Главной осью)
+
+
+    */
+
+}
+
+
+.box div:nth-child(1){
+    background: red;
+    height: 100px;
+    flex-basis: 400px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    /*
+        stretch
+        flex-start
+        flex-end
+        center
+        baseline
+    */
+
+    order: 1; /* по умолчанию 0 */
+}
+
+.box div:nth-child(2){
+    background: orange;
+    height: 50px;
+    flex-basis: 200px;
+    order: 2;
+}
+
+.box div:nth-child(3){
+    background: yellow;
+    order: 3;
+}
+
+.box div:nth-child(4){
+    background: green;
+}
+
+.box div:nth-child(5){
+    background: blue;
+}
+
+.box div:nth-child(6){
+    background: darkblue;
+    order: -1;
+}
+
+.box div:nth-child(7){
+    background: purple;
+}
+
+.box div{ 
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*
+     flex-basis - устанавливает базовую ширину элемента либо ширину которая будет вычеслена до всех условий, влияющих на ширину элемента
+     Поддерживает px \ em \ rem \ % \ vw \ vh
+
+     flex-grow по умолчанию 0
+     Нужен для распределения свободного места в строке между элементами
+
+     flex-shrink - это коэффициент уменьшения элемента. Противоположно flex-grow и это свойство начинает работать когда ширина сумм всех элементов
+     меньше ширины родителя
+
+     Краткая запись
+     flex: 0 1 auto;
+     flex: flex-grow flex-shrink flex-basis;
+*/
+
+body{ font-family:arial; padding:20px; }
+input{ display:none; }
+label{ padding:.2em .5em; }
+label:hover{ background:#ccc; cursor:pointer; }
+input:checked + label{ font-weight:bold; background:#ccc; }
+
+.flex{
+	display: flex;
+	
+	max-width: 600px; /* макс ширина блока */
+	margin: 0 auto; /* выравниваем блок по центру */
+	
+	border:1px solid red; border-top:0;border-bottom:0; padding:1em; box-sizing:border-box; /* обоозначим границы */
+}
+.item{ padding:20px; background:#b5ced8; border-radius:5px; }
+.item:nth-child(1){ flex:0 1 70%; margin-right:10px; z-index:2; }
+.item:nth-child(2){ flex:0 1 30%; text-align:center; font-size:400%; z-index:1; }
+
+.wide{ background:rgba(255,255,255,.5); margin:1em 0; padding:1em; box-sizing:border-box; width:300px; transition:width 500ms; }
+.wide:hover{ width:500px; }
+
+#width:checked ~ .flex .item:nth-child(1){ width:70%; }
+#width:checked ~ .flex .item:nth-child(2){ width:30%; }
+
+#maxwidth:checked ~ .flex .item:nth-child(1){ max-width:70%; }
+#maxwidth:checked ~ .flex .item:nth-child(2){ max-width:30%; }
