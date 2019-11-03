@@ -1,0 +1,14 @@
+
+$color: red;
+$color: blue;
+
+.box{
+    color: $color;
+    .box-item{
+        font-size: 20px;
+        .h1{
+            font-size: 44px;
+        }
+    }
+}
+

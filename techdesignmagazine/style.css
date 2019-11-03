@@ -1,0 +1,181 @@
+.header{
+    height: 204px;
+    width: 1260px;
+    background-color: #3e3b4a;
+
+    margin: 0 auto;
+}
+
+.menu{
+    background-image: url("menu.png");
+    top: 90px;
+    left: 120px;
+    height: 19px;
+    width: 74px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.search{
+    background-image: url("search.png");
+    top: 90px;
+    left: 1050px;
+    height: 23px;
+    width: 91px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.dmt{
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    left: 578px;
+    top: 72px;
+    width: 92px;
+    height: 33px;
+    position: absolute;
+}
+
+.DesignMeetsTech{
+    color: #898691;
+    font-size: 13px;
+    position: absolute;
+    top: 116px;
+    left: 580px;
+}
+
+.content{
+    background: #3e3b4a;
+    height: 1457px;
+    width: 1260px;
+}
+
+.BusterBulb{
+    background-image: url("HOME.png");
+    width: 1021px;
+    height: 513px;
+    position: absolute;
+    left: 120px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+.body{
+    background-color: #3e3b4a;
+    height: 1800px;
+    width: 1260;
+}
+
+.readmore{
+    background-image: url("Read-more.png");
+    height: 42px;
+    width: 126px;
+    bottom: 40px;
+    left: 40px;
+    position: absolute;
+}
+
+.accessoires{
+    background-image: url("ACCESSORIES.png");
+    width: 623px;
+    height: 485px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 745px;
+    left: 120px;
+}
+
+.GoodThings{
+    background-image: url("Good-things.png");
+    width: 378px;
+    height: 485px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 745px;
+    left: 763px;
+}
+
+.email{
+    background-image: url("Email.png");
+    width: 285px;
+    height: 42px;
+    position: absolute;
+    left: 50px;
+    bottom: 197px;
+}
+
+.subscribe{
+    background-image: url("subscribe.png");
+    width: 285px;
+    height: 42px;
+    position: absolute;
+    left: 50px;
+    bottom: 136px;
+}
+
+.cameras{
+    background-image: url("CAMERAS.png");
+    width: 259px;
+    height: 420px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1249px;
+    left: 120px;
+}
+
+.review{
+    background-image: url("Review.png");
+    width: 93px;
+    height: 42px;
+    position: absolute;
+    left: 84px;
+    bottom: 39px;    
+}
+
+.sound{
+    background-image: url("SOUND.png");
+    width: 259px;
+    height: 420px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1249px;
+    left: 400px;
+}
+
+.cameras2{
+    background-image: url("CAMERAS2.png");
+    width: 460px;
+    height: 420px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1249px;
+    left: 680px;
+}
+
+.copyright{
+    left: 120px;
+    top: 1717px;
+    color: #898691;
+    font-size: 13px;
+    position: absolute;    
+}
+
+.facebook{
+    background-image: url("facebook.png");
+    width: 20px;
+    height: 23px;
+    top: 1711px;
+    position: absolute;
+    left: 1083px;
+    background-repeat: no-repeat;
+}
+
+.twitter{
+    background-image: url("twitter.png");
+    width: 25px;
+    height: 23px;
+    top: 1715px;
+    position: absolute;
+    left: 1110px;
+    background-repeat: no-repeat;   
+}
