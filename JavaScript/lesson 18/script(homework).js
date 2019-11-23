@@ -1,6 +1,6 @@
 'use strict';
 
-// 1
+// №1
 
 let a = 1;
 if(a === 1){
@@ -23,7 +23,7 @@ if(a3 === 1){
     console.log("Неверно");
 }
 
-// 2
+// №2
 
 let item = false;
 
@@ -37,7 +37,7 @@ if(item != true){
 let item2 = (item = !true )? "'Верно'": "'Неверно'";
 console.log(item2);
 
-// 3
+// №3
 
 let a4 = 4;
 if(a4 > 0, a4 < 4 ){
@@ -67,7 +67,7 @@ if(a7 > 0, a7 < 4 ){
     console.log("'Неверно'");
 }
 
-// 4
+// №4
 
 let a8;
 let b;
@@ -77,27 +77,24 @@ if(a8 > 3, a8 < 12 || b >= 7, b < 15 ){
     console.log("'Неверно'");
 }
 
-// 5 
+// №5 
 
-let month = 5;
-if(month = 1 || 2 || 12){
+let month = 12;
+
+if (month == 1 || 2 && month == 12 ){
     console.log('Зима');
-} else if(month = 3 || 4 || 5){
+}if (month>=3 && month<=5){
     console.log('Весна');
-} else if(month = 6 || 7 || 8){
+}if (month>=6 && month<=8){
     console.log('Лето');
-}else if(month = 9 || 10 || 11){
+}if (month>=9 && month<=11){
     console.log('Осень');
-} else {
-    console.log('Что это?');
 }
-
-// 6
+// №6
 let number = 0;
 
-while ( number % 2){
-    console.log(number);
-    number = + 2;
+for(;;){
+    if(number>=100){break;}
+number=number+2;
+console.log(number);
 }
-
-
