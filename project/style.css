@@ -1,0 +1,107 @@
+header {
+    background-image: url('header-background.png');
+    height: 1209px;
+    width: 1920px;
+
+}
+
+.logoImage{
+    background-image: url('Logo.png');
+    height: 61px;
+    width: 51px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.polind-text-logo{
+    left: 120px;
+    top: 60px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+}
+
+.navigation{
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+
+.guide{
+    top: 65px;
+    position: absolute;
+    right: 440px;
+}
+.journey{
+    top: 65px;
+    position: absolute;
+    right: 340px;
+}
+.hotels{
+    top: 65px;
+    position: absolute;
+    right: 252px;
+}
+.travellers{
+    top: 65px;
+    position: absolute;
+    right: 145px;
+}
+.search-i{
+    background-image: url('Search.png');
+    height: 16px;
+    width: 16px;
+    right: 40px;
+    position: absolute;
+    top: 65px;
+}
+
+
+.fall-in-love{
+    color: white;
+    font-size: 92px;
+    text-align: center;
+}
+.best-way-to-find{
+    color: #3e4343;
+    font-size: 18,19px;
+    text-align: center;
+}
+.with-poland{
+    font-size: 92px;
+    color: #ed6950;
+    text-align: center;
+}
+
+.fall-in-love-with-poland{
+    position: absolute;
+    top: 342px;
+    left: 50%;
+}
+
+.buttom-search-place{
+    position: absolute;
+    left: 60%;
+    top: 602px;
+    height: 51px;
+    width: 232px;
+    background-image: url('Button-search-place.png');
+}
+.button-search-place-text{
+    font-size: 14px;
+    position: absolute;
+    color: #b98000;
+    bottom: 18px;
+    left: 47px;;
+}
+
+.popular-places{
+    color: white;
+    position: absolute;
+    font-size: 18.19px;
+    top: 929px;
+    left: 50%;
+}
+
+

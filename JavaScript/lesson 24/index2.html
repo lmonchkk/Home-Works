@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+    
+<a href="javascript:void(0);" class='link'>Нажми на меня</a>
+
+<div id='someText' style='display: none;'>Hi i`m is only some text.</div>
+<div class='message'>Привет я это всего лишь немного текста</div>
+
+    <a href="Los_angeles.jpg" data-fancybox="gallery">Открыть картинку</a>
+    <a href="Los_angeles.jpg" data-fancybox="gallery">Открыть картинку</a>
+    <a href="Los_angeles.jpg" data-fancybox="gallery">Открыть картинку</a>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+    $('.message').text('<b>Пока, теперь я изменён<b>'); // они одинаковые
+    $('.message').html('Пока, теперь я изменён'); // они одинаковые
+
+    $('.link').on(
+        'click',
+        function(){
+            $('.message').css('color', 'red');
+            $('#someText').toggle('medium');
+        }
+    );
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
+</html>
