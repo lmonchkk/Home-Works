@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+body{
+    background: #3e3b4a;
+}
+header{
+    height: 204px;
+    width: 1260px;
+}
+
+.menu{
+    background: url('menu-i.png') no-repeat;
+    color: #797681;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 32px 380px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+.menu-t{
+    margin-left: 32px;
+}
+
+.heder-logo-dmt{
+    color: white;
+    margin: 0;
+    font-size: 48px;
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+
+.search{
+    float: right;
+}

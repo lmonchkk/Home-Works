@@ -1,6 +1,116 @@
-header {
+header{
+    background-image: url('header-background.png');
+    height: 1205px;
+    width: 1920px;
+    margin-top: 0px;
+    position: fixed;
+}
+
+.logoImage{
+    background-image: url('Logo.png');
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 51px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 155px;
+    height: 61px;
+}
+
+.polind-text-logo{
+    display: block;
+    width: 76px;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.guide{
+    margin-right: 472px;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+}
+
+.journey{
+    margin-right: 340px;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    margin-top: ;
+}
+
+width: 155px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header {
+    position: absolute;
+    top: 0px;
     background-image: url('header-background.png');
     height: 1209px;
+    margin-top: 0px;;
     width: 1920px;
 
 }
@@ -9,9 +119,8 @@ header {
     background-image: url('Logo.png');
     height: 61px;
     width: 51px;
-    position: absolute;
-    left: 40px;
-    top: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .polind-text-logo{
@@ -81,9 +190,8 @@ header {
 }
 
 .buttom-search-place{
-    position: absolute;
-    left: 60%;
-    top: 602px;
+    margin-top: 602px;
+    margin-left: 50%;
     height: 51px;
     width: 232px;
     background-image: url('Button-search-place.png');
@@ -103,5 +211,5 @@ header {
     top: 929px;
     left: 50%;
 }
-
+*/
 

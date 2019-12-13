@@ -1,16 +1,16 @@
-.kartina{
-    background-image: url("doroga.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%
-    
-}
 
 .Kreml{
     background-image: url("kreml.jpg");
     background-repeat: no-repeat;
     height: 50%;
     width: 50%;
-   
+    position: absolute;
+    bottom: 0px;
     
+}
+
+.WhiteHouse{
+    background: url('WhiteHouse.jpg');
+    height: 100px;
+    width: 100px;
 }

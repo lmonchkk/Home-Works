@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "Schula"; 
+    src: url("18406.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+
+.vertical{
+    height: 420px;
+    width: 170px;
+    background-color: violet;
+    display: block;
+    margin-top: 10px;
+    clear: left;
+}
+
+body{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    height: 300px;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: black;
+}
+.phone{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: grey;
+}
+
+.Punkt1{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin-right: 7px;
+
+    color: white;
+    
+}
+
+.Punkt2{
+    background: white;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: black;
+}
+
+.Punkt3{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+.Punkt4{
+    background: white;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: black;
+}
+
+.Punkt5{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+
+.Punkt1:hover{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin-right: 7px;
+
+    color: black;
+    
+}
+
+.Punkt2:hover{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+.Punkt3:hover{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: black;
+}
+
+.Punkt4:hover{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: white;
+}
+
+.Punkt5:hover{
+    background: grey;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 7px;
+
+    color: black;
+}
+
+.horizontal{
+    margin-top: 200px;
+}
+
+
+.Punkt1V{
+    background: red;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt2V{
+    background: orange;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt3V{
+    background: yellow;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt4V{
+    background: green;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt5V{
+    background: lightblue;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt6V{
+    background: blue;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt7V{
+    background: purple;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.vertical{
+    height: 420px;
+    width: 170px;
+    background-color: violet;
+    display: block;
+    margin-top: 10px;
+    clear: left;
+}
+
+.text{
+    float: right;
+}
+
+content{
+    position: relative;
+    float: left;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+
+h1{
+    font-family: 'Schula';
+}

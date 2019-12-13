@@ -1,5 +1,9 @@
-.Punkt1{
-    background: grey;
+body {
+    background-color: gray; 
+}
+
+.Punkt1V{
+    background: red;
 
     height: 50px;
     width: 150px;
@@ -7,48 +11,144 @@
     font-size: 40PX;
 
     margin: 10px;
+}
+
+.Punkt2V{
+    background: orange;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt3V{
+    background: yellow;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt4V{
+    background: green;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt5V{
+    background: lightblue;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt6V{
+    background: blue;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+
+.Punkt7V{
+    background: purple;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin: 10px;
+}
+.Punkt1{
+    background: black;
+
+    height: 50px;
+    width: 150px;
+
+    font-size: 40PX;
+
+    margin-right: 7px;
+
+    color: white;
 }
 
 .Punkt2{
-    background: grey;
+    background: white;
 
     height: 50px;
     width: 150px;
 
     font-size: 40PX;
 
-    margin: 10px;
+    margin: 7px;
+
+    color: black;
 }
 
 .Punkt3{
-    background: grey;
+    background: black;
 
     height: 50px;
     width: 150px;
 
     font-size: 40PX;
 
-    margin: 10px;
+    margin: 7px;
+
+    color: white;
 }
 
 .Punkt4{
-    background: grey;
+    background: white;
 
     height: 50px;
     width: 150px;
 
     font-size: 40PX;
 
-    margin: 10px;
+    margin: 7px;
+
+    color: black;
 }
 
 .Punkt5{
-    background: grey;
+    background: black;
 
     height: 50px;
     width: 150px;
 
     font-size: 40PX;
 
-    margin: 10px;
+    margin: 7px;
+
+    color: white;
+}
+
+
+
+.horizontal{
+    margin-left: 200px;
+}
+
+.vertical{
+    text-decoration: none;
 }
